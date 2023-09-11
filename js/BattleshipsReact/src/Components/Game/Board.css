@@ -1,0 +1,63 @@
+.board {
+    width: 400px;
+    height: 400px;
+    border: 2px solid #0a0a0c;
+    margin: 1em 2em 2em 1em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.board div {
+    width: 12.5%;
+    height: 12.5%;
+    box-sizing: border-box;
+    background: #ffffff;
+    border: 1px solid #0a0a0c;
+    transition: background-color 100ms ease-in-out;
+}
+
+/* SQUARES */
+.board .square-sea {
+    background-color: #3d86e4;
+}
+
+.board .square-sea:hover {
+    background-color: rgba(61, 158, 228, 0.85);
+}
+
+.board .square-hit {
+    background-color: #f40000;
+}
+
+.board .square-hit:hover {
+    background-color: rgba(244, 0, 0, 0.63);
+}
+
+.board .square-miss {
+    background-color: #2e00b8;
+}
+
+.board .square-miss:hover {
+    background-color: rgba(46, 0, 184, 0.79);
+}
+
+.board .square-carrier,
+.board .square-battleship,
+.board .square-destroyer,
+.board .square-submarine,
+.board .square-patrol {
+    background-color: #2f2c2c;
+}
+
+.board .square-carrier:hover,
+.board .square-battleship:hover,
+.board .square-destroyer:hover,
+.board .square-submarine:hover,
+.board .square-patrol:hover {
+    background-color: rgba(47, 44, 44, 0.77);
+}
+
+h2 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}

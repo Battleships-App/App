@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <style>
+        body, html {
+            height: 100%;
+            font-family: "Inconsolata", sans-serif;
+        }
+
+        .bgimg {
+            background-position: center;
+            background-size: cover;
+            background-image: url("images/wallpaper.jpg");
+            min-height: 75%;
+        }
+
+        .menu {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div id="root"></div>
+<div class="w3-top">
+    <div class="w3-row w3-padding w3-black">
+        <div class="w3-col s3">
+            <a href="#" class="w3-button w3-block w3-black">HOME</a>
+        </div>
+        <div class="w3-col s3">
+            <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+        </div>
+        <div class="w3-col s3">
+            <a href="#menu" class="w3-button w3-block w3-black">RULES</a>
+        </div>
+        <div class="w3-col s3">
+            <a href="#where" class="w3-button w3-block w3-black">LOGIN</a>
+        </div>
+    </div>
+</div>
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+    <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+        <span class="w3-tag">Are you going to sink?</span>
+    </div>
+    <div class="w3-display-middle w3-center">
+        <h5 class="w3-center w3-padding-64"><span class="w3-text-white" style="font-size:100px" >Battleships<br>Application</span>
+    </div>e
+    <div class="w3-display-bottomright w3-center w3-padding-large">
+        <span class="w3-text-white">Or are you going to prevail?</span>
+    </div>
+</header>
+
+<div class="w3-sand w3-grayscale w3-large">
+    <div class="w3-container" id="about">
+        <div class="w3-content" style="max-width:700px">
+            <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE APPLICATION</span></h5>
+            <p>This Application was created for the subject DAW (short for Desenvolvimento de Aplicações Web, Development of Web Applications in English), during the Winter Semester of 2022/2023, of the LEIC course.</p>
+            <p>Developed by Group 4, students of ISEL (Instituto Superior De Engenharia De Lisboa).</p>
+            <div class="w3-panel w3-leftbar w3-light-grey">
+                <p><i>GROUP 4: </i></p>
+                <p>47283 Ricardo Bernardino</p>
+                <p>47240 Miguel Almeida</p>
+                <p>45935 David Costa</p>
+            </div>
+            <img src="/images/isel.png" style="width:100%;max-width:1000px" class="w3-margin-top">
+            <p><strong>Country:</strong> Portugal </p>
+            <p><strong>Address:</strong> Rua Conselheiro Emídio Navarro, 1, 1959-007 Lisboa</p>
+        </div>
+    </div>
+    <div class="w3-container" id="menu">
+        <div class="w3-content" style="max-width:700px">
+
+            <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE RULES</span></h5>
+
+            <div class="w3-row w3-center w3-card w3-padding">
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Basic');" id="myLink">
+                    <div class="w3-col s6 tablink">Basic</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Advanced');">
+                    <div class="w3-col s6 tablink">Advanced</div>
+                </a>
+            </div>
+
+            <div id="Basic" class="w3-container menu w3-padding-48 w3-card">
+                <h5>1. In Basic</h5>
+                <p class="w3-text-grey">TODO</p><br>
+
+            </div>
+
+            <div id="Advanced" class="w3-container menu w3-padding-48 w3-card">
+                <h5>1. In Advanced</h5>
+                <p class="w3-text-grey">TODO</p><br>
+            </div>
+            <img src="/images/boards.jpeg" style="width:100%;max-width:1000px;margin-top:32px;">
+        </div>
+    </div>
+
+    <div class="w3-container" id="where" style="padding-bottom:32px;">
+        <div class="w3-content" style="max-width:700px">
+            <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
+            <p>Find us at some address at some place.</p>
+            <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
+            <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+            <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+            <form action="/action_page.php" target="_blank">
+                <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+                <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+                <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+                <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+                <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+            </form>
+        </div>
+    </div>
+
+    <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+        <p>Git Repository: <a href="https://github.com/isel-leic-daw/2022-daw-leic52d-2022-daw-leic52d-g04" title="Click Me" target="_blank" class="w3-hover-text-green">Click Me</a></p>
+    </footer>
+
+</div>
+<script>
+    //Top Bar Interaction Reference
+    function openMenu(evt, menuName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("menu");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+        }
+        document.getElementById(menuName).style.display = "block";
+        evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+    }
+    document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
+

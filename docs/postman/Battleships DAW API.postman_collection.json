@@ -1,0 +1,437 @@
+{
+	"info": {
+		"_postman_id": "7fe9ee20-5e3a-4423-a394-2a613c5f8e62",
+		"name": "Battleships DAW API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23514063"
+	},
+	"item": [
+		{
+			"name": "Info",
+			"item": [
+				{
+					"name": "getAppInfo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/info/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"info",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Game",
+			"item": [
+				{
+					"name": "insideGame",
+					"item": [
+						{
+							"name": "makeMove",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/game/play?gameId&moves",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"game",
+										"play"
+									],
+									"query": [
+										{
+											"key": "gameId",
+											"value": null
+										},
+										{
+											"key": "moves",
+											"value": null
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getMyFleetStatus",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/game/status/fleet?gameId",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"game",
+										"status",
+										"fleet"
+									],
+									"query": [
+										{
+											"key": "gameId",
+											"value": null
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getEnemyFleetStatus",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/game/status/fleet/enemy?gameId",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"game",
+										"status",
+										"fleet",
+										"enemy"
+									],
+									"query": [
+										{
+											"key": "gameId",
+											"value": null
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "buildBoard",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/game/build?gameId&ships",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"game",
+										"build"
+									],
+									"query": [
+										{
+											"key": "gameId",
+											"value": null
+										},
+										{
+											"key": "ships",
+											"value": null
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "outsideGame",
+					"item": [
+						{
+							"name": "getOpenGames",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "46af-fcb7-4a6b-a360-87c9",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/game/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"game",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "createGame",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "46af-fcb7-4a6b-a360-87c9",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/game/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"game",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getMyHistory",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "87c9-fcb7-4a6b-a360-46af",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/game/history",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"game",
+										"history"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "joinGame",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/game/?gameId",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"game",
+										""
+									],
+									"query": [
+										{
+											"key": "gameId",
+											"value": null
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getGameStatus",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "46af-fcb7-4a6b-a360-87c9",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/game/status?gameId=32fd50b0-5bb2-478e-896a-8db0575907a0",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"game",
+										"status"
+									],
+									"query": [
+										{
+											"key": "gameId",
+											"value": "32fd50b0-5bb2-478e-896a-8db0575907a0"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Player",
+			"item": [
+				{
+					"name": "getRankings",
+					"request": {
+						"auth": {
+							"type": "bearer"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/players/rankings?pages=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"players",
+								"rankings"
+							],
+							"query": [
+								{
+									"key": "pages",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPlayerbyId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/players/?username=madu3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"players",
+								""
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "madu3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "signUp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/players/signup?username=andre&password=sporting",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"players",
+								"signup"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "andre"
+								},
+								{
+									"key": "password",
+									"value": "sporting"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "signIn",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/players/signin?username=migas2&password=benfica",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"players",
+								"signin"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "migas2"
+								},
+								{
+									"key": "password",
+									"value": "benfica"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

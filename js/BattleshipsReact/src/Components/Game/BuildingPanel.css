@@ -1,0 +1,70 @@
+#available-ships,
+#game-panel {
+    width: 200px;
+    max-height: 500px;
+    padding: 1em;
+    text-align: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: #0a0a0c;
+}
+
+#ship-box {
+    padding: 1em;
+    border: #0a0a0c;
+}
+
+#ship-box > * + * {
+    margin-top: 1em;
+}
+
+#rotate-button {
+    width: 125px;
+    height: 50px;
+    background-color: #00c20c;
+    color: #ffffff;
+}
+
+#rotate-button:hover{
+    background-color: rgba(0, 194, 12, 0.76);
+}
+
+#play-button {
+    width: 125px;
+    height: 50px;
+    background-color: #f40000;
+    color: #ffffff;
+}
+
+#play-button:hover {
+    background-color: rgba(244, 0, 0, 0.68);
+}
+
+.ship-box-title,
+.game-panel {
+    color: #f40000;
+}
+
+.ship {
+    width: 150px;
+    height: 35px;
+    align-items: center;
+    background-color: rgba(250, 123, 54, 0.91);
+    padding: 5px;
+    cursor: pointer;
+}
+
+.ship:hover {
+    background-color: rgb(250, 90, 54);
+}
+
+.placing {
+    background-color: #f40000;
+}
+
+.placing:hover {
+    background-color: #ff4444;
+}
