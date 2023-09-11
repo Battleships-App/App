@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BattleshipsAndroid</string>
+    <string name="about_battleships">Sobre o Jogo Battleships</string>
+    <string name="home_play_button">Jogar</string>
+    <string name="home_profile_button">Perfil</string>
+    <string name="home_signinup_button">Entrar/Registar</string>
+    <string name="home_leaderboard_button">Tabela de Pontuações</string>
+    <string name="home_exit_button">SAIR</string>
+    <string name="leaderboard_searchforplayer">Procure por um Jogador:</string>
+    <string name="leaderboard_name">Nome:</string>
+    <string name="leaderboard_leaderboard">Tabela de Pontuações</string>
+    <string name="utils_loading">A Carregar...</string>
+    <string name="activity_info_no_suitable_app">Não foi possível encontrar uma aplicação</string>
+    <string name="lobby_shotsperround">"Tiros Por Ronda = "</string>
+    <string name="lobby_spr">TPR</string>
+    <string name="lobby_lobby">Salas</string>
+    <string name="login_please_introduce_your_credentials">Por favor Introduza as suas Informações</string>
+    <string name="login_username">Nome:</string>
+    <string name="login_password">Palavra-Chave:</string>
+    <string name="login_hide_pass">Esconder Palavra-Chave</string>
+    <string name="login_show_password">Mostrar Palavra-Chave</string>
+    <string name="utils_waiting">À Espera...</string>
+    <string name="login_signin_button">Entrar</string>
+    <string name="login_register_button">Registar-se</string>
+    <string name="me_yourinfo">Sua Informação</string>
+    <string name="me_yourgamehistory">Histórico de Jogos</string>
+    <string name="me_name">Nome:</string>
+    <string name="me_gamesplayed">Jogos Jogados:</string>
+    <string name="me_totalpoints">Total de Pontos:</string>
+    <string name="game_waitingforplayer">À Espera de Jogador</string>
+    <string name="game_won">Ganhou!</string>
+    <string name="game_returntolobby">Retornar às Salas</string>
+    <string name="game_buildinggame">Construindo o Jogo</string>
+    <string name="game_playerboard">Tabuleiro de</string>
+    <string name="game_ready">Pronto</string>
+    <string name="game_waitingfortheopponent">À Espera do Oponente...</string>
+    <string name="game_selectshipandtapboardtoplace">Selecione o barco e toque no tabuleiro para colocar</string>
+    <string name="game_resetboard">Redefinir</string>
+    <string name="game_shipslefttoplace">Peças que Faltam Colocar</string>
+    <string name="game_rotateship">Rodar</string>
+    <string name="game_game">Jogo</string>
+    <string name="game_myturn">Dispare!</string>
+    <string name="game_enemyturn">está a Disparar...</string>
+</resources>

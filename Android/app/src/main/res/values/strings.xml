@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">BattleshipsAndroid</string>
+    <string name="activity_info_no_suitable_app">Could not find a suitable application</string>
+    <string name="about_battleships">About Battleships Game</string>
+    <string name="home_play_button">Play</string>
+    <string name="home_profile_button">Profile</string>
+    <string name="home_leaderboard_button">Leaderboard</string>
+    <string name="home_signinup_button">SignIn/SignUp</string>
+    <string name="home_exit_button">EXIT</string>
+    <string name="leaderboard_searchforplayer">Search for a Player:</string>
+    <string name="leaderboard_name">Name:</string>
+    <string name="leaderboard_leaderboard">Leaderboard</string>
+    <string name="utils_loading">Loading...</string>
+    <string name="lobby_shotsperround">Shots Per Round =</string>
+    <string name="lobby_spr">SPR</string>
+    <string name="lobby_lobby">Lobby</string>
+    <string name="login_please_introduce_your_credentials">Please Introduce Your Credentials</string>
+    <string name="login_username">Username:</string>
+    <string name="login_password">Password:</string>
+    <string name="login_hide_pass">Hide Password</string>
+    <string name="login_show_password">Show Password</string>
+    <string name="login_register_button">Register</string>
+    <string name="login_signin_button">Sign In</string>
+    <string name="utils_waiting">Waiting...</string>
+    <string name="me_yourinfo">Your Info</string>
+    <string name="me_yourgamehistory">Your Game History</string>
+    <string name="me_name">Name:</string>
+    <string name="me_gamesplayed">Games Played:</string>
+    <string name="me_totalpoints">Total Points:</string>
+    <string name="game_waitingforplayer">Waiting for Player</string>
+    <string name="game_won">Won!</string>
+    <string name="game_returntolobby">Return to Lobby</string>
+    <string name="game_buildinggame">Building Game</string>
+    <string name="game_playerboard">Board of</string>
+    <string name="game_ready">Ready</string>
+    <string name="game_waitingfortheopponent">Waiting For The Opponent...</string>
+    <string name="game_selectshipandtapboardtoplace">Select Ship and Tap Board to Place</string>
+    <string name="game_resetboard">Reset</string>
+    <string name="game_shipslefttoplace">Ships Left to Place</string>
+    <string name="game_rotateship">Rotate</string>
+    <string name="game_game">Game</string>
+    <string name="game_myturn">Fire Away!</string>
+    <string name="game_enemyturn">is Firing...</string>
+</resources>
